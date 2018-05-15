@@ -1,0 +1,14 @@
+html
+  head
+    title Dummy Login Service
+  body
+    h1= message
+    form( method="POST" action="/doLogin" )
+      label Username:
+      input( type="text", name="username" )
+      br
+      label Password:
+      input( type="password", name="password" )
+      br
+      input( type="hidden", name="redirectUrl", value= redirect )
+      input( type="submit" )
