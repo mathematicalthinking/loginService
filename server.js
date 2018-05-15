@@ -77,7 +77,7 @@ app.get('/logout', function(req, res){
   });
 
   console.log("returning to pows");
-  res.redirect("http://localhost:8080/pows");
+  res.redirect("http://localhost:8080/");
 });
 
 function handleError( req ){
